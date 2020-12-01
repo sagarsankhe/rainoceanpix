@@ -99,10 +99,10 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                 <a class="nav-link" href="#0" data-no="3">And more</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.rainocean.net/index.html#about">About Us</a>
+                                <a class="nav-link" href="https://www.rainocean.net/index.html#about" data-no="77">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.rainocean.net/index.html#contact"Contact Us</a>
+                                <a class="nav-link" href="https://www.rainocean.net/index.html#contact" data-no="88"> Contact Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:history.back()" data-no="99">Back</a>
@@ -907,7 +907,15 @@ http://www.templatemo.com/tm-500-fluid-gallery
                    /*window.location.href  = "https://www.rainocean.net/"; */
                 }
                 
-                else 
+                else if($(this).data("no") == 77) 
+                {
+                window.location.href = "http://rainocean.net/index.html#about"
+                }
+                else if($(this).data("no") == 88) 
+                {
+                window.location.href = "http://rainocean.net/index.html#contact"
+                }
+                else
                 {
                     adjustHeightOfPage($(this).data("no")); // Adjust page height       
                 }
